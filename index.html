@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Amor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            background-color: #f5e1f3;
+            padding: 50px;
+            overflow: hidden;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #ff4081;
+            position: relative;
+            animation: slide-in 2s forwards, color-change 4s infinite;
+        }
+
+        @keyframes slide-in {
+            0% {
+                left: -100%;
+                opacity: 0;
+            }
+            100% {
+                left: 0;
+                opacity: 1;
+            }
+        }
+
+        @keyframes color-change {
+            0%, 100% {
+                color: #ff4081;
+            }
+            50% {
+                color: #673ab7;
+            }
+        }
+
+        .content {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        .content.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .button {
+            display: inline-block;
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector(".content").classList.add("visible");
+        });
+    </script>
+
+
+<body>
+
+
+
+    <div class="container">
+
+ <div class="header">
+        <h1>¡Feliz cumpleaños al amor de mi vida!</h1>
+    </div>
+  
+        <div class="message">
+            <p>No hay palabras que puedan expresar todo el amor que tengo por ti. En este gran día quiero decirte que eres la persona más importante para mí y la alegría de mi vida. Sabes que siempre estoy ahí para ti, en los buenos y malos momentos, para apoyarte, abrazarte y hacerte feliz. ¡Este cumpleaños es sólo el comienzo de un gran año juntos!</p>
+            <p>¡Te amo con todo mi corazón y te deseo un maravilloso cumpleaños!</p>
+        </div>
+        <div class="image-gallery">
+            <img src="images/image1.jpeg" alt="Imagen 1">
+            <img src="images/image2.jpeg" alt="Imagen 2">
+            <img src="images/image3.jpeg" alt="Imagen 3">
+            <img src="images/image4.jpeg" alt="Imagen 4">
+            <img src="images/image5.jpeg" alt="Imagen 5">
+        </div>
+    </div>
+     <div id="confetti"></div>
+  <div id="stars"></div>
+    <script src="script.js"></script>
+
+
+ <audio controls>
+        <source src="audio/background.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+
+</body>
+</html>
